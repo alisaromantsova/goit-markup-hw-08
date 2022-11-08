@@ -23,12 +23,12 @@ ul {
     list-style-type: none;
 }
 
-.container {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 15px;
-}
+// .container {
+//     width: 1200px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     padding: 0 15px;
+// }
 
 .visually-hidden {
     position: absolute;
@@ -41,4 +41,13 @@ ul {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+@media screen and (max-width: 480px) {
+    .container {
+    max-width: 480px;
+     margin-left: auto;
+     margin-right: auto;
+     padding-left: 15px;
+     padding-right: 15px;
+    }
 }
