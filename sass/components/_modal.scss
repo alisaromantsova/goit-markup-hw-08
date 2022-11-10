@@ -221,6 +221,9 @@ margin-left: 4px;
 .form__button:focus {
     background-color: #188CE8;
 }
+body.modal-open{
+    overflow: hidden;
+}
 
 }
 // .modal {

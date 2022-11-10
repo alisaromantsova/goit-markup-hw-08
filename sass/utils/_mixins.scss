@@ -4,3 +4,21 @@
     line-height: $lineHeight;
     letter-spacing: $letterSpacing;
 }
+
+@mixin forPhoneOnly {
+    @media (max-width:767px){
+        @content 
+    }
+}
+
+@mixin forTabletUp {
+    @media (min-width:768px){
+        @content
+    }
+}
+
+@mixin forDesktop {
+    @media (min-width:1170px){
+        @content
+    }
+}

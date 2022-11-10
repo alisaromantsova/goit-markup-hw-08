@@ -1,7 +1,7 @@
-@media screen and (max-width: 480px) {
+
 .benefits {
-            padding-top: 60px;
-            padding-bottom: 60px;
+padding-top: 60px;
+padding-bottom: 60px;
 }
 .benefits__list{
 display: flex;
@@ -10,70 +10,56 @@ gap: 30px;
 align-items: center;
 
 }
-.benefits__item{
-    max-width: 450px;
-}
 .benefits__icon{
-    height: 120px;
-        max-width: 450px;
-         display: flex;
-      justify-content: center;
-     align-items: center;
-     margin-bottom: 30px;
-     background-color: $sectionColor;
-     border-radius: 4px;
-    
-}
-.benefits__item{
-    max-width: 450px;
-}
+height: 120px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 30px;
+background-color: $sectionColor;
+border-radius: 4px;
+}  
 .benefits__title{
-    font-size: 14px;
-        line-height: 1.14;
-        text-align: center;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: $mainColor;
-        margin-bottom: 10px;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: $mainColor;
+margin-bottom: 10px;
 }
 .benefits__text{
-    font-size: 14px;
-        line-height: 1.171;
-        letter-spacing: 0.03em;
-        color: $paleColor;
+font-size: 14px;
+line-height: 1.171;
+letter-spacing: 0.03em;
+color: $paleColor;
+}
+@media screen and (max-width: 767px){
+    .benefits__item{
+    max-width: 450px;
+    }
+    .benefits__title{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 768px){
+    .benefits__item{
+        width: 354px;
+    }
+    .benefits__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 1170px){
+    .benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+    .benefits__item{
+    width: 270px;
+    }
+    .benefits__list{
+    flex-wrap: no-wrap;
 }
 }
-// .benefits {
-//     padding-top: 94px;
-//     padding-bottom: 94px;
-
-//     &__list {
-//         display: flex;
-//         gap: 30px;
-//     }
-
-//     &__item {
-//         max-width: 270px;
-//     }
-
-//     &__icon {
-//         height: 120px;
-//         width: 270px;
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         margin-bottom: 30px;
-//         background-color: $sectionColor;
-//         border-radius: 4px;
-//     }
-
-//     &__title {
-//         @include textStyles($mainColor,14px,1.14,0.03em);
-//         margin-bottom: 10px;
-//         text-transform: uppercase;
-//     }
-
-//     &__text {
-//         @include textStyles($paleColor, 14px, 1.71, 0.03em);
-//     }
-// }

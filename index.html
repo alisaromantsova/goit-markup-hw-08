@@ -63,7 +63,10 @@
                         </div>
                     </div>
                 </div>
-                <nav>
+                <div class="tablet__header">
+                    <a class="header__logo" href="./index.html"
+                        ><span class="logo__accent">Web</span>Studio
+                    </a>
                     <ul class="nav-block__list">
                         <li>
                             <a class="nav-block__link nav-block__link--active" href="./index.html"
@@ -81,25 +84,25 @@
                         </li>
                         <li><a class="nav-block__link" href="">Контакти</a></li>
                     </ul>
-                </nav>
-                <ul class="contact">
-                    <li>
-                        <a class="contact__link" href="mailto:info@devstudio.com">
-                            <svg class="contact__icon" height="12" width="16">
-                                <use href="./img/icons.svg#icon-envelope"></use>
-                            </svg>
-                            <p>info@devstudio.com</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="contact__link" href="tel:+380961111111">
-                            <svg class="contact__icon" height="16" width="12">
-                                <use href="./img/icons.svg#icon-smartphone"></use>
-                            </svg>
-                            <p>+38 096 111 11 11</p>
-                        </a>
-                    </li>
-                </ul>
+                    <ul class="contact">
+                        <li>
+                            <a class="contact__link" href="mailto:info@devstudio.com">
+                                <svg class="contact__icon" height="12" width="16">
+                                    <use href="./img/icons.svg#icon-envelope"></use>
+                                </svg>
+                                <p>info@devstudio.com</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contact__link" href="tel:+380961111111">
+                                <svg class="contact__icon" height="16" width="12">
+                                    <use href="./img/icons.svg#icon-smartphone"></use>
+                                </svg>
+                                <p>+38 096 111 11 11</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
         <main>
@@ -489,26 +492,25 @@
                             </li>
                         </ul>
                     </div>
-                    <div>
-                        <form>
-                            <p class="join__title">Підпишіться на розсилку</p>
-                            <div class="footer-form">
-                                <input
-                                    class="footer-form__input"
-                                    name="email"
-                                    id="mailing"
-                                    type="email"
-                                    placeholder="E-mail"
-                                />
-                                <button class="footer-form__button" type="submit">
-                                    Підписатися
-                                    <svg class="footer-form__icon" width="24" height="24">
-                                        <use href="./img/icons.svg#icon-send"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
+
+                    <form class="footer__right">
+                        <p class="join__title">Підпишіться на розсилку</p>
+                        <div class="footer-form">
+                            <input
+                                class="footer-form__input"
+                                name="email"
+                                id="mailing"
+                                type="email"
+                                placeholder="E-mail"
+                            />
+                            <button class="footer-form__button" type="submit">
+                                Підписатися
+                                <svg class="footer-form__icon" width="24" height="24">
+                                    <use href="./img/icons.svg#icon-send"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </footer>
@@ -588,4 +590,3 @@
         </script>
         <script src="./js/menu.js"></script>
     </body>
-</html>
