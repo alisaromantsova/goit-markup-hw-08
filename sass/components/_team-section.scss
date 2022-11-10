@@ -1,174 +1,102 @@
 .team{
-    background-color: $sectionColor;
+background-color: $sectionColor;
+padding-top: 60px;
+padding-bottom: 60px;
+    @include forDesktop{
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }               
 }
-@media screen and (min-width: 0) {
-    .team {
-                padding-top: 60px;
-                padding-bottom: 60px;
-                
-}
+
 .team__title{
-    font-size: 28px;
-        line-height: 1.17;
-        text-align: center;
-        letter-spacing: 0.03em;
-        margin-bottom: 30px;
+font-size: 28px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+margin-bottom: 30px;
+    @include forDesktop{
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 50px;
+    }
 }
+
 .team__list{
-    display: flex;
-    gap: 30px;
-    flex-direction: column;
-    align-items: center;
+display: flex;
+gap: 30px;
+flex-direction: column;
+align-items: center;
+    @include forTabletUp{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
+
 .person{
-max-width: 450px;
-    background-color: $contrastColor;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    
+width: 100%;
+background-color: $contrastColor;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+    @include forTabletUp{
+        flex-basis: calc((100% - 30px)/2);
+    }
+    @include forDesktop{
+        flex-basis: calc((100% - 90px)/4);
+    }
 }
+
 .person__info {
-    display: flex;
-        flex-direction: column;
-        align-items: center;
-            padding-top: 30px;
-            padding-bottom: 30px;
-          
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 30px;
+padding-bottom: 30px;
 }
+
+
 .person__img{
-    width: 450px;
-    height: 460px;
+width: 100%;
 }
+
 .person__title{
-    font-weight: 500;
-        font-size: 16px;
-        line-height: 1.18;
-        letter-spacing: 0.03em;
-        color: $mainColor;
-        margin-bottom: 10px;
+margin-bottom: 10px;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+letter-spacing: 0.03em;
+color: $mainColor;
 }
+
 .person__text{
-    margin-bottom: 16px;
-        font-size: 16px;
-        line-height: 1.18;
-        letter-spacing: 0.03em;
-        color: $paleColor;
+margin-bottom: 16px;
+font-size: 16px;
+line-height: 1.18;
+letter-spacing: 0.03em;
+color: $paleColor;
 }
+
 .person__networks {
-    display: flex;
-    gap: 10px;
+display: flex;
+gap: 10px;
 }
+
 .person__social {
-    display: block;
- display: flex;
+display: block;
+display: flex;
 justify-content: center;
 align-items: center;
 border-radius: 50%;
 width: 44px;
 height: 44px;
-    color: #AFB1B8;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.person__social:hover,
-.person__social:focus {
-    background-color: $accentColor;
-    color: $contrastColor;
+color: #AFB1B8;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: $accentColor;
+        color: $contrastColor;
+    }
 }
 
 .person__icon {
-    fill: currentColor;
+fill: currentColor;
 }
-}
-@media screen and (min-width: 768px){
-.team__list{
-    display: flex;
-    gap: 30px;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.person{
-max-width: 354px;
-
-}
-.person__img{
-    width: 354px;
-    height: 374px;
-}
-}
-@media screen and (min-width: 1170px){
-    .team {
-                padding-top: 94px;
-                padding-bottom: 94px;
-}
-.team__title{
-font-size: 36px;
-line-height: 42px;
-margin-bottom: 50px;
-}
-.person{
-max-width: 270px;
-}
-.person__img{
-    width: 270px;
-    height: 260px;
-}
-}
-// .team {
-//     padding-top: 94px;
-//     padding-bottom: 94px;
-//     background-color: $sectionColor;
-
-//     &__title {
-//         @include textStyles($mainColor, 36px, 1.16, 0.03em);
-//         margin-bottom: 50px;
-//         text-align: center;
-//     }
-
-//     &__list {
-//         display: flex;
-//         gap: 30px;
-//     }
-//     }
-//     .person {
-//         background-color: $contrastColor;
-//         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-//         border-radius: 0px 0px 4px 4px;
-
-
-//     &__info {
-//         padding: 30px;
-//         text-align: center;
-//     }
-
-//     &__title {
-//         @include textStyles($mainColor, 16px, 1.18, 0.03em);
-//         margin-bottom: 10px;
-//         font-weight: $mediumText;
-//     }
-
-//     &__text {
-//         @include textStyles($paleColor, 16px, 1.18, 0.03em);
-//         margin-bottom: 16px;
-//     }
-
-//     &__networks {
-//         display: flex;
-//         justify-content: space-between;
-//     }
-//     &__social {
-//         @extend %social;
-//         color: #AFB1B8;
-//         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//     }
-
-//     &__social:hover,
-//     &__social:focus {
-//         background-color: $accentColor;
-//         color: $contrastColor;
-//     }
-
-//     &__icon {
-//         fill: currentColor;
-//     }
-// }

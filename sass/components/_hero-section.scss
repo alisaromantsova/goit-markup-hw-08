@@ -1,83 +1,69 @@
 .hero {
-    background-color: $heroColor;
-    text-align: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 118px;
-    padding-bottom: 118px;
+padding-top: 118px;
+padding-bottom: 118px;
+max-width: 480px;
+min-height: 400px;
+background-color: $heroColor;
+text-align: center;
+background-position: center;
+background-repeat: no-repeat;
+background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-mobile.jpg);
+margin-left: auto;
+margin-right: auto;
+    @include forTabletUp{
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../img/hero.jpg);
+            width: 768px;
+    }
+    @include forDesktop{
+           height: 600px;
+            width: 1600px;
+            padding-top: 200px;
+            padding-bottom: 200px;
+    }
 }
+
 .hero__text{
+margin-bottom: 30px;
 font-weight: 900;
 font-size: 26px;
 line-height: 1.62;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-margin-bottom: 30px;
 color: $contrastColor;
-    margin-left: auto;
-    margin-right: auto;
+    @include forTabletUp{
+        width: 360px;
+    }
+    @include forDesktop{
+        width: 696px;
+        font-size: 44px;
+        line-height: 60px;
+    }
 }
+
 .hero__button{
+display: inline-block;
+min-width: 200px;
+padding: 10px 24px;
+border-radius: 4px;
 background-color: $accentColor;
 font-family: inherit;
 font-size: 16px;
 line-height: 1.88;
 color: $contrastColor;
 font-weight: $boldText ;
+letter-spacing: 0.06em;
 border: none;
 outline: none;
-border-radius: 4px;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-letter-spacing: 0.06em;
-display: inline-block;
-min-width: 200px;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-padding: 10px 24px;
-}
-.hero__button:hover,
-.hero__button:focus{
+    @include forDesktop{
+        padding: 10px 32px;
+    } 
+
+    &:hover,
+    &:focus{
     background-color: #188CE8 ;
 }
-
-@media screen and (max-width: 767px) {
-.hero{
-background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-url(../img/hero-mobile.jpg);
-max-width: 480px;
-min-height: 400px;
-}
-}
-@media screen and (min-width:768px) {
-.hero {
-background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-url(../img/hero.jpg);
-width: 768px;
-min-width: 400px;
-}
-.hero__text{
-    width: 360px;
-
-}
-
-}
-@media screen and (min-width:1170px){
-    .hero{
-    height: 600px;
-    width: 1170px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    }
-    .hero__text{
-    width: 696px;
-
-    font-size: 44px;
-    line-height: 60px;
-    }
-    .hero__button{
-        padding: 10px 32px;
-    }
 }

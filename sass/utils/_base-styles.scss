@@ -39,17 +39,16 @@ body.modal-open{
     overflow: hidden;
 }
 
-    .container {
-     margin-left: 0 auto;
-     margin-right: 0 auto;
-     padding: 0 15px;
+.container {
+margin: 0 auto;
+padding: 0 15px;
     @media screen and (max-width: 767px) {
         width: 480px;
     }
-@media screen and (min-width:768px) and (max-width:1169px){
-    width: 768px;
-}
-@media screen and (min-width:1170px){
-    width: 1200px;
-}
+    @media screen and (min-width:768px) and (max-width:1169px){
+        width: 768px;
+    }
+    @media screen and (min-width:1170px){
+        width: 1200px;
+    }
 }

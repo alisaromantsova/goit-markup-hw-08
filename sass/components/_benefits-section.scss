@@ -2,14 +2,20 @@
 .benefits {
 padding-top: 60px;
 padding-bottom: 60px;
+    @include  forDesktop{
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
+
 .benefits__list{
 display: flex;
-flex-direction: column;
+flex-direction: row;
 gap: 30px;
 align-items: center;
-
+flex-wrap: wrap;
 }
+
 .benefits__icon{
 height: 120px;
 display: flex;
@@ -19,47 +25,34 @@ margin-bottom: 30px;
 background-color: $sectionColor;
 border-radius: 4px;
 }  
+
+.benefits__item{
+width: 100%;
+    @include forTabletUp{
+        flex-basis: calc((100% - 30px)/2);
+    }
+    @include forDesktop{
+        flex-basis: calc((100% - 90px)/4);
+    }
+}
+
+
 .benefits__title{
+margin-bottom: 10px;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: $mainColor;
-margin-bottom: 10px;
+text-align: center;
+    @include forTabletUp{
+        text-align: start;
+    }
 }
+
 .benefits__text{
 font-size: 14px;
 line-height: 1.171;
 letter-spacing: 0.03em;
 color: $paleColor;
-}
-@media screen and (max-width: 767px){
-    .benefits__item{
-    max-width: 450px;
-    }
-    .benefits__title{
-        text-align: center;
-    }
-}
-@media screen and (min-width: 768px){
-    .benefits__item{
-        width: 354px;
-    }
-    .benefits__list{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    }
-}
-@media screen and (min-width: 1170px){
-    .benefits {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    }
-    .benefits__item{
-    width: 270px;
-    }
-    .benefits__list{
-    flex-wrap: no-wrap;
-}
 }
