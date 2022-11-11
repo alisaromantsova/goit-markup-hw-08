@@ -33,10 +33,13 @@ align-items: center;
 }
 
 .person{
-width: 100%;
+width: calc(100vmin - 30px);
 background-color: $contrastColor;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
+    @include forPhoneOnly{
+        max-width: 450px;
+    }
     @include forTabletUp{
         flex-basis: calc((100% - 30px)/2);
     }
