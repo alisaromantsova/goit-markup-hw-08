@@ -33,9 +33,12 @@ gap: 30px;
 
 .customer__item{
 height: 92px;
-flex-basis: calc((100% - 30px)/2);
+flex-basis: calc((100vmin - 60px)/2);
+    @include forPhoneOnly{
+    max-width: 210px;
+    }
     @include forTabletUp{
-        flex-basis: calc((100% - 60px)/3);
+    flex-basis: calc((100% - 60px)/3);
     }
     @include forDesktop{
         flex-basis: calc((100% - 150px)/6);
