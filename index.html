@@ -19,9 +19,9 @@
     </head>
 
     <body>
-        <!-- <header class="header">
+        <header class="header">
             <div class="container">
-                <div class="mobile__header">
+                <div class="mobile-header">
                     <a class="header__logo" href="./index.html"
                         ><span class="logo__accent">Web</span>Studio
                     </a>
@@ -37,31 +37,6 @@
                             <use href="./img/icons.svg#icon-close-menu" class="icon-menu"></use>
                         </svg>
                     </button>
-
-                    <div class="menu-container" id="menu-container" data-menu>
-                        <div class="mobile-nav">
-                            <a href="/" class="mobile-nav__link mobile-nav__link--active">Студія</a>
-                            <a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a>
-                            <a href="" class="mobile-nav__link">Контакти</a>
-                        </div>
-                        <div class="mobile-contacts">
-                            <a href="tel:+380961111111" class="mobile-contact__tel"
-                                >+38 096 111 11 11</a
-                            >
-                            <a href="mailto:info@devstudio.com" class="mobile-contact__mail"
-                                >info@devstudio.com
-                            </a>
-                        </div>
-                        <div class="mobile-social">
-                            <a href="" class="mobile-social__link">Instagram</a>
-                            <span class="line">|</span>
-                            <a href="" class="mobile-social__link">Twitter</a>
-                            <span class="line">|</span>
-                            <a href="" class="mobile-social__link">Facebook</a>
-                            <span class="line">|</span>
-                            <a href="" class="mobile-social__link">LinkedIn</a>
-                        </div>
-                    </div>
                 </div>
                 <div class="tablet__header">
                     <a class="header__logo" href="./index.html"
@@ -104,16 +79,18 @@
                     </ul>
                 </div>
             </div>
-        </header> -->
+        </header>
         <main>
-            <!-- <section class="hero">
+            <section class="hero">
                 <div class="container">
-                    <h1 class="hero__text">Ефективні рішення для вашого бізнесу</h1>
-                    <button data-modal-open class="hero__button" type="button">
-                        Замовити послугу
-                    </button>
+                    <div class="hero__container">
+                        <h1 class="hero__text">Ефективні рішення для вашого бізнесу</h1>
+                        <button data-modal-open class="hero__button" type="button">
+                            Замовити послугу
+                        </button>
+                    </div>
                 </div>
-            </section> -->
+            </section>
             <section class="benefits">
                 <div class="container">
                     <h2 class="visually-hidden">О нас</h2>
@@ -426,7 +403,7 @@
                 </div>
             </section>
         </main>
-        <!-- <footer class="footer">
+        <footer class="footer">
             <div class="container">
                 <div class="footer__container">
                     <div class="footer__left">
@@ -513,7 +490,7 @@
                     </form>
                 </div>
             </div>
-        </footer> -->
+        </footer>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button data-modal-close type="button" class="modal__close-button">
@@ -578,6 +555,29 @@
 
                     <button class="button form__button" type="submit">Відправити</button>
                 </form>
+            </div>
+        </div>
+
+        <div class="menu-container" id="menu-container" data-menu>
+            <div class="mobile-nav">
+                <a href="/" class="mobile-nav__link mobile-nav__link--active">Студія</a>
+                <a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a>
+                <a href="" class="mobile-nav__link">Контакти</a>
+            </div>
+            <div class="mobile-contacts">
+                <a href="tel:+380961111111" class="mobile-contact__tel">+38 096 111 11 11</a>
+                <a href="mailto:info@devstudio.com" class="mobile-contact__mail"
+                    >info@devstudio.com
+                </a>
+            </div>
+            <div class="mobile-social">
+                <a href="" class="mobile-social__link">Instagram</a>
+                <span class="line">|</span>
+                <a href="" class="mobile-social__link">Twitter</a>
+                <span class="line">|</span>
+                <a href="" class="mobile-social__link">Facebook</a>
+                <span class="line">|</span>
+                <a href="" class="mobile-social__link">LinkedIn</a>
             </div>
         </div>
 
