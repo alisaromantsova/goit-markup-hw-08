@@ -14,14 +14,12 @@
     opacity: 0;
     pointer-events: none;
 }
-
-@media screen and (max-width: 480px) {
 .modal {
     position: absolute;
     left: 50%;
     top: 50%;
     padding: 40px;
-    width: 450px;
+    max-width: 450px;
     background-color: $contrastColor ;
     transform: translate(-50%, -50%);
 }
@@ -225,7 +223,7 @@ body.modal-open{
     overflow: hidden;
 }
 
-}
+
 // .modal {
 //     position: absolute;
 //     left: 50%;
