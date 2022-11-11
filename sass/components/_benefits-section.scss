@@ -27,7 +27,7 @@ border-radius: 4px;
 }  
 
 .benefits__item{
-flex-basis: calc(100vmin - 30px);
+flex-basis: calc(100vw - 30px);
     @include forTabletUp{
         flex-basis: calc((100% - 30px)/2);
     }

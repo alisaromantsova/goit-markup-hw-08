@@ -12,9 +12,12 @@
     if (!expanded) {
       document.body.style.position = 'fixed';
       document.body.style.top = `-${window.scrollY}px`;
+      document.body.style.width = `100%`;
+
     } else {
       document.body.style.position = 'initial'; 
       document.body.style.top = ''; 
+      document.body.style.width = ''; 
     }
 
     mobileMenuRef.classList.toggle("is-open");
