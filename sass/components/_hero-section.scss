@@ -4,17 +4,18 @@ padding-bottom: 118px;
 background-color: $heroColor;
 background-position: center;
 background-repeat: no-repeat;
+background-size: cover;
 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-mobile.jpg);
 margin-left: auto;
 margin-right: auto;
+width: 1600px;
     @include forTabletUp{
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../img/hero.jpg);
-            width: 768px;
     }
     @include forDesktop{
            height: 600px;
-            width: 1200px;
+            // width: 1200px;
             padding-top: 200px;
             padding-bottom: 200px;
     }
@@ -29,6 +30,7 @@ margin-right: auto;
 }
 
 .hero__text{
+    width: calc(100vmin-30px);
 margin-bottom: 30px;
 font-weight: 900;
 font-size: 26px;
