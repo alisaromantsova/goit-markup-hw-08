@@ -100,12 +100,16 @@ display: none;
 display: none;
 
 }
-
+.mobile-nav-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 80px);
+}
 .mobile-nav{
 display: flex;
 flex-direction: column;
 gap: 32px;
-margin-bottom: 40vh;
 }
 .mobile-nav__link{
 font-weight: 500;
