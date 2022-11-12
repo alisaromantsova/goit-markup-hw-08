@@ -152,7 +152,8 @@
                         <li>
                             <div class="action-card">
                                 <img
-                                    src="./img/computer.jpg"
+                                  srcset="./img/action1.jpg 1x, ./img/action1@2x.jpg 2x"
+                                    src="./img/action1.jpg"
                                     alt="Людина друкує на клавіатурі"
                                     width="370"
                                 />
@@ -162,7 +163,8 @@
                         <li>
                             <div class="action-card">
                                 <img
-                                    src="./img/laptop.jpg"
+                                srcset="./img/action2.jpg 1x, ./img/action2@2x.jpg 2x"
+                                    src="./img/action2.jpg"
                                     alt="Людина працює за ноутбуком"
                                     width="370"
                                 />
@@ -171,7 +173,11 @@
                         </li>
                         <li>
                             <div class="action-card">
-                                <img src="./img/tablet.jpg" alt="Планшет" width="370" />
+                                <img
+                                 srcset="./img/action3.jpg 1x, ./img/action3@2x.jpg 2x"
+                                src="./img/action3.jpg"
+                                 alt="Планшет"
+                                  width="370" />
                                 <p class="action-card__text">Дизайнерські рішення</p>
                             </div>
                         </li>
@@ -183,12 +189,18 @@
                     <h2 class="team__title">Наша команда</h2>
                     <ul class="team__list">
                         <li class="person">
-                            <img
-                                src="./img/manthree.jpg"
-                                class="person__img"
-                                alt="Ігор Дем'яненко"
-                                width="270"
-                            />
+                            <picture class="person__img">
+                                <source 
+                                srcset="./img/team1-phone.jpg 1x, ./img/team1-phone@2x.jpg 2x)"
+                                media="(max-width: 767px">
+                                 <source 
+                                srcset="./img/team1-tablet.jpg 1x, ./img/team1-tablet@2x.jpg 2x"
+                                media="(min-width: 768px">
+                                 <source 
+                                srcset="./img/team1-desktop.jpg 1x, ./img/team1-desktop@2x.jpg 2x)"
+                                media="(min-width: 1200px">
+                                <img src="./img/team1-desktop.jpg" alt="Ігор Дем'яненко">
+                            </picture>
                             <div class="person__info">
                                 <h3 class="person__title">Ігор Дем'яненко</h3>
                                 <p class="person__text">Product Designer</p>
@@ -225,12 +237,18 @@
                             </div>
                         </li>
                         <li class="person">
-                            <img
-                                src="./img/woman.jpg"
-                                class="person__img"
-                                alt="Ольга Рєпіна"
-                                width="270"
-                            />
+                             <picture class="person__img">
+                                <source 
+                                srcset="./img/team2-phone.jpg 1x, ./img/team2-phone@2x.jpg 2x)"
+                                media="(max-width: 767px">
+                                 <source 
+                                srcset="./img/team2-tablet.jpg 1x, ./img/team2-tablet@2x.jpg 2x"
+                                media="(min-width: 768px">
+                                 <source 
+                                srcset="./img/team2-desktop.jpg 1x, ./img/team2-desktop@2x.jpg 2x)"
+                                media="(min-width: 1200px">
+                                <img src="./img/team2-desktop.jpg" alt="Ольга Рєпіна">
+                            </picture>
                             <div class="person__info">
                                 <h3 class="person__title">Ольга Рєпіна</h3>
                                 <p class="person__text">Frontend Developer</p>
@@ -267,12 +285,18 @@
                             </div>
                         </li>
                         <li class="person">
-                            <img
-                                src="./img/manone.jpg"
-                                class="person__img"
-                                alt="Микола Тарасов"
-                                width="270"
-                            />
+                               <picture class="person__img">
+                                <source 
+                                srcset="./img/team3-phone.jpg 1x, ./img/team3-phone@2x.jpg 2x)"
+                                media="(max-width: 767px">
+                                 <source 
+                                srcset="./img/team3-tablet.jpg 1x, ./img/team3-tablet@2x.jpg 2x"
+                                media="(min-width: 768px">
+                                 <source 
+                                srcset="./img/team3-desktop.jpg 1x, ./img/team3-desktop@2x.jpg 2x)"
+                                media="(min-width: 1200px">
+                                <img src="./img/team3-desktop.jpg" alt="Микола Тарасов">
+                            </picture>
                             <div class="person__info">
                                 <h3 class="person__title">Микола Тарасов</h3>
                                 <p class="person__text">Marketing</p>
@@ -309,12 +333,18 @@
                             </div>
                         </li>
                         <li class="person">
-                            <img
-                                src="./img/mantwo.jpg"
-                                class="person__img"
-                                alt="Михайло Єрмаков"
-                                width="270"
-                            />
+                           <picture class="person__img">
+                                <source 
+                                srcset="./img/team4-phone.jpg 1x, ./img/team4-phone@2x.jpg 2x)"
+                                media="(max-width: 767px">
+                                 <source 
+                                srcset="./img/team4-tablet.jpg 1x, ./img/team4-tablet@2x.jpg 2x"
+                                media="(min-width: 768px">
+                                 <source 
+                                srcset="./img/team4-desktop.jpg 1x, ./img/team4-desktop@2x.jpg 2x)"
+                                media="(min-width: 1200px">
+                                <img src="./img/team4-desktop.jpg" alt="Михайло Єрмаков">
+                            </picture>
                             <div class="person__info">
                                 <h3 class="person__title">Михайло Єрмаков</h3>
                                 <p class="person__text">UI Designer</p>

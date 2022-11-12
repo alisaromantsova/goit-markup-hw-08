@@ -59,12 +59,15 @@ position: absolute;
 top: 0;
 left: 0;
 background-color: #ffffff;
-padding: 48px 50px;
+padding: 48px 40px;
 width: 100%;
 display: none;
 z-index:4;
 height: 100vh;
 width: 100vw;
+@media (max-width:480px) {
+    padding: 10vw;
+}
 }
 
 .menu-container.is-open{
@@ -156,6 +159,7 @@ display: block;
 .mobile-social{
 display: flex;
 gap: 10px;
+flex-wrap: wrap;
 }
 .mobile-social__link{
 font-weight: 500;
