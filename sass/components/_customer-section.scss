@@ -57,15 +57,12 @@ border-radius: 4px;
 transition-property: color, border;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
- 
-}
-
-.customer__link:hover,
-.customer__link:focus {
+&:hover,
+&:focus {
 color: $accentColor;
 border: 1px solid $accentColor;
 }
-
+}
 .customer__icon {
 fill: currentColor;
 }

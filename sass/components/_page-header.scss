@@ -142,7 +142,7 @@ color: $accentColor;
 text-decoration: none;
 margin-bottom: 32px;
 display: block;
-
+transition: text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
 &:hover,
 &:focus{
 text-decoration: underline;
@@ -156,6 +156,11 @@ letter-spacing: 0.02em;
 color: $paleColor;
 text-decoration: none;
 display: block;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover,
+&:focus{
+ color: $accentColor;   
+}
 }
 .mobile-social{
 display: flex;
@@ -212,6 +217,7 @@ text-decoration: none;
 list-style-type: none;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 position: relative;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 &:hover,
