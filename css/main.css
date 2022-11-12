@@ -1137,7 +1137,6 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
-  align-self: flex-start;
   color: #ffffff;
 }
 @media (min-width: 1200px) {
