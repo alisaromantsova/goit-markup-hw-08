@@ -1203,107 +1203,161 @@ header {
   margin-left: 12px;
 }
 
-@media screen and (max-width: 480px) {
+.portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media (min-width: 1200px) {
   .portfolio {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  .menu-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 40px;
-  }
-  .menu-list__button {
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-    padding: 6px 22px;
-    text-align: center;
-    background-color: #F5F4FA;
-    font-family: inherit;
-    font-weight: 500;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .menu-list__button:hover,
-.menu-list__button:focus {
-    background-color: #2196F3;
-    color: #ffffff;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  }
-  .menu-list__button--active {
-    margin-left: 0;
-    background-color: #2196F3;
-    color: #ffffff;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  }
-  .portfolio-card {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-  .portfolio-card__img {
-    width: 100%;
-  }
-  .portfolio-card__link {
-    display: block;
-    text-decoration: none;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .portfolio-card__link:hover,
-.portfolio-card__link:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
-  .portfolio-card__animation {
-    position: relative;
-    overflow: hidden;
-  }
-  .portfolio-card__description {
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 77px 24px;
-    background-color: #2196F3;
-    opacity: 0.9;
-    transform: translateY(358px);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .portfolio-card__link:hover .portfolio-card__description,
-.portfolio-card__link:focus .portfolio-card__description {
-    transform: translateY(0);
-  }
-  .portfolio-card__container {
-    padding: 20px 24px;
-    border-left: 1px solid #eeeeee;
-    border-right: 1px solid #eeeeee;
-    border-bottom: 1px solid #eeeeee;
-  }
-  .portfolio-card__title {
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: #212121;
-    margin-bottom: 4px;
-  }
-  .portfolio-card__text {
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
-    color: #757575;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+  .menu-list {
+    width: calc(100vw - 30px);
+    max-width: 450px;
+  }
+}
+@media (min-width: 768px) {
+  .menu-list {
+    justify-content: center;
+  }
+}
+
+.menu-list__button {
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  padding: 6px 22px;
+  text-align: center;
+  background-color: #F5F4FA;
+  font-family: inherit;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-list__button:hover, .menu-list__button:focus {
+  background-color: #2196F3;
+  color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.menu-list__button--active {
+  margin-left: 0;
+  background-color: #2196F3;
+  color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .portfolio-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.portfolio-card__img {
+  width: 100%;
+  height: 294px;
+}
+
+@media (max-width: 767px) {
+  .portfolio-card__item {
+    width: calc(100vw - 30px);
+    max-width: 450px;
+    height: 404px;
+  }
+}
+@media (min-width: 768px) {
+  .portfolio-card__item {
+    width: 354px;
+    height: 440px;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio-card__item {
+    width: 370px;
+    height: 404px;
+  }
+}
+
+.portfolio-card__link {
+  display: block;
+  text-decoration: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-card__link:hover,
+.portfolio-card__link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-card__animation {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-card__description {
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 77px 24px;
+  background-color: #2196F3;
+  opacity: 0.9;
+  transform: translateY(358px);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-card__link:hover .portfolio-card__description,
+.portfolio-card__link:focus .portfolio-card__description {
+  transform: translateY(0);
+}
+
+.portfolio-card__container {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.portfolio-card__title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+  margin-bottom: 4px;
+}
+
+.portfolio-card__text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
 .backdrop {
   position: fixed;
   top: 0;

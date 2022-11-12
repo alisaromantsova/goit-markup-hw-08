@@ -1,14 +1,26 @@
-@media screen and (max-width: 480px) {
 .portfolio {
 padding-top: 60px;
 padding-bottom: 60px;
+    @include forDesktop{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
 }
+
 .menu-list {
 display: flex;
 flex-wrap: wrap;
 gap: 8px;
 margin-bottom: 40px;
+    @include forPhoneOnly{
+    width: calc(100vw - 30px);
+    max-width: 450px;
+    }
+    @include forTabletUp{
+    justify-content: center;
+    }
 }
+
 .menu-list__button {
 font-size: 16px;
 line-height: 1.62;
@@ -25,33 +37,62 @@ border: none;
 cursor: pointer;
 border-radius: 4px;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    background-color: $accentColor;
+    color: $contrastColor;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+
+    &--active {
+    margin-left: 0;
+    background-color: $accentColor;
+    color: $contrastColor;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 }
 
-.menu-list__button:hover,
-.menu-list__button:focus {
-background-color: $accentColor;
-color: $contrastColor;
-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.menu-list__button--active {
-margin-left: 0;
-background-color: $accentColor;
-color: $contrastColor;
-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
- .portfolio-card {
+.portfolio-cards {
 display: flex;
 flex-direction: column;
 gap: 30px;
- }
-.portfolio-card__img{
-    width: 100%;
+@include forTabletUp{
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
+}
+
+.portfolio-card__img{
+width:100%;
+height: 294px;
+}
+
+
+.portfolio-card__item{
+@include forPhoneOnly {
+        width: calc(100vw - 30px);
+        max-width: 450px;
+        height: 404px;
+    }
+
+    @include forTabletUp {
+        width: 354px;
+        height: 440px;
+    }
+
+    @include forDesktop {
+        width: 370px;
+        height: 404px;
+    }
+}
+
 .portfolio-card__link {
 display: block;
+
 text-decoration: none;
 transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .portfolio-card__link:hover,
@@ -66,9 +107,9 @@ overflow: hidden;
 
 .portfolio-card__description {
 font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    color: $contrastColor;
+line-height: 1.56;
+letter-spacing: 0.03em;
+color: $contrastColor;
 height: 100%;
 width: 100%;
 position: absolute;
@@ -95,22 +136,21 @@ border-bottom: 1px solid #eeeeee;
 
 .portfolio-card__title {
 font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: $mainColor;
+line-height: 2;
+letter-spacing: 0.06em;
+color: $mainColor;
 margin-bottom: 4px;
 }
 .portfolio-card__text {
 font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
-    color: #757575;
-}
+line-height: 1.88;
+letter-spacing: 0.03em;
+color: #757575;
 }
 
+
 // .portfolio {
-//     padding-top: 94px;
-//     padding-bottom: 94px;
+//  
 // }
 // .menu-list {
 //     display: flex;
