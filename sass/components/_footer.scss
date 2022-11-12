@@ -98,7 +98,7 @@ text-transform: uppercase;
 text-align: center;
 color: $contrastColor;
     @include forDesktop{
-        align-self: start;
+        text-align: start;
     }
 }
 
