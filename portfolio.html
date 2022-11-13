@@ -21,64 +21,69 @@
     <body>
         <header class="header">
             <div class="container">
-                <div class="mobile__header">
-                    <a class="header__logo" href="./index.html"
-                        ><span class="logo__accent">Web</span>Studio
-                    </a>
-                    <button
-                        type="button"
-                        class="menu-button is-open"
-                        data-menu-button
-                        aria-expanded="false"
-                        aria-controls="menu-container"
-                    >
-                        <svg width="40" height="40">
-                            <use href="./img/icons.svg#icon-menu-active" class="icon-cross"></use>
-                            <use href="./img/icons.svg#icon-close-menu" class="icon-menu"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="tablet__header">
-                    <a class="header__logo" href="./index.html"
-                        ><span class="logo__accent">Web</span>Studio
-                    </a>
-                    <ul class="nav-block__list">
-                        <li>
-                            <a
-                                class="nav-block__link"
-                                href="./index.html"
-                                target="_self"
-                                rel="noopener noreferrer nofollow"
-                                >Студія</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                class="nav-block__link nav-block__link--active"
-                                href="./portfolio.html"
-                                >Портфоліо</a
-                            >
-                        </li>
-                        <li><a class="nav-block__link" href="">Контакти</a></li>
-                    </ul>
-                    <ul class="contact">
-                        <li>
-                            <a class="contact__link" href="mailto:info@devstudio.com">
-                                <svg class="contact__icon" height="12" width="16">
-                                    <use href="./img/icons.svg#icon-envelope"></use>
-                                </svg>
-                                <p>info@devstudio.com</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="contact__link" href="tel:+380961111111">
-                                <svg class="contact__icon" height="16" width="12">
-                                    <use href="./img/icons.svg#icon-smartphone"></use>
-                                </svg>
-                                <p>+38 096 111 11 11</p>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="header__container">
+                    <div class="mobile__header">
+                        <a class="header__logo" href="./index.html"
+                            ><span class="logo__accent">Web</span>Studio
+                        </a>
+                        <button
+                            type="button"
+                            class="menu-button is-open"
+                            data-menu-button
+                            aria-expanded="false"
+                            aria-controls="menu-container"
+                        >
+                            <svg width="40" height="40">
+                                <use
+                                    href="./img/icons.svg#icon-menu-active"
+                                    class="icon-cross"
+                                ></use>
+                                <use href="./img/icons.svg#icon-close-menu" class="icon-menu"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="tablet__header">
+                        <a class="header__logo" href="./index.html"
+                            ><span class="logo__accent">Web</span>Studio
+                        </a>
+                        <ul class="nav-block__list">
+                            <li>
+                                <a
+                                    class="nav-block__link"
+                                    href="./index.html"
+                                    target="_self"
+                                    rel="noopener noreferrer nofollow"
+                                    >Студія</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="nav-block__link nav-block__link--active"
+                                    href="./portfolio.html"
+                                    >Портфоліо</a
+                                >
+                            </li>
+                            <li><a class="nav-block__link" href="">Контакти</a></li>
+                        </ul>
+                        <ul class="contact">
+                            <li>
+                                <a class="contact__link" href="mailto:info@devstudio.com">
+                                    <svg class="contact__icon" height="12" width="16">
+                                        <use href="./img/icons.svg#icon-envelope"></use>
+                                    </svg>
+                                    <p>info@devstudio.com</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="contact__link" href="tel:+380961111111">
+                                    <svg class="contact__icon" height="16" width="12">
+                                        <use href="./img/icons.svg#icon-smartphone"></use>
+                                    </svg>
+                                    <p>+38 096 111 11 11</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </header>
@@ -117,7 +122,7 @@
                                                 ./img/port1-tablet.jpg    1x,
                                                 ./img/port1-tablet@2x.jpg 2x
                                             "
-                                            media="(min-width: 768px)"
+                                            media="(min-width: 768px, max-width: 1199px)"
                                         />
                                         <source
                                             srcset="
@@ -160,7 +165,7 @@
                                                 ./img/port2-tablet.jpg    1x,
                                                 ./img/port2-tablet@2x.jpg 2x
                                             "
-                                            media="(min-width: 768px)"
+                                            media="(min-width: 768px, max-width: 1199px)"
                                         />
                                         <source
                                             srcset="
@@ -205,7 +210,7 @@
                                                 ./img/port3-tablet.jpg    1x,
                                                 ./img/port3-tablet@2x.jpg 2x
                                             "
-                                            media="(min-width: 768px)"
+                                            media="(min-width: 768px, max-width: 1199px)"
                                         />
                                         <source
                                             srcset="
@@ -248,7 +253,7 @@
                                                 ./img/port4-tablet.jpg    1x,
                                                 ./img/port4-tablet@2x.jpg 2x
                                             "
-                                            media="(min-width: 768px)"
+                                            media="(min-width: 768px, max-width: 1199px)"
                                         />
                                         <source
                                             srcset="
@@ -291,7 +296,7 @@
                                                 ./img/port5-tablet.jpg    1x,
                                                 ./img/port5-tablet@2x.jpg 2x
                                             "
-                                            media="(min-width: 768px)"
+                                            media="(min-width: 768px, max-width: 1199px)"
                                         />
                                         <source
                                             srcset="
@@ -334,7 +339,7 @@
                                                 ./img/port6-tablet.jpg    1x,
                                                 ./img/port6-tablet@2x.jpg 2x
                                             "
-                                            media="(min-width: 768px)"
+                                            media="(min-width: 768px, max-width: 1199px)"
                                         />
                                         <source
                                             srcset="
@@ -379,7 +384,7 @@
                                                 ./img/port7-tablet.jpg    1x,
                                                 ./img/port7-tablet@2x.jpg 2x
                                             "
-                                            media="(min-width: 768px)"
+                                            media="(min-width: 768px, max-width: 1199px)"
                                         />
                                         <source
                                             srcset="
@@ -422,7 +427,7 @@
                                                 ./img/port8-tablet.jpg    1x,
                                                 ./img/port8-tablet@2x.jpg 2x
                                             "
-                                            media="(min-width: 768px)"
+                                            media="(min-width: 768px, max-width: 1199px)"
                                         />
                                         <source
                                             srcset="
@@ -465,7 +470,7 @@
                                                 ./img/port9-tablet.jpg    1x,
                                                 ./img/port9-tablet@2x.jpg 2x
                                             "
-                                            media="(min-width: 768px)"
+                                            media="(min-width: 768px, max-width: 1199px)"
                                         />
                                         <source
                                             srcset="
