@@ -617,10 +617,24 @@ header {
   .contact__link {
     font-size: 14px;
     line-height: 1.14;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 .contact__link:hover, .contact__link:focus {
   color: #2196F3;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact__mail {
+    padding-top: 21px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact__phone {
+    padding-bottom: 21px;
+  }
 }
 
 .hero {
