@@ -21,62 +21,72 @@
     <body>
         <header class="header">
             <div class="container">
-                <div class="mobile__header">
-                    <a class="header__logo" href="./index.html"
-                        ><span class="logo__accent">Web</span>Studio
-                    </a>
-                    <button
-                        type="button"
-                        class="menu-button is-open"
-                        data-menu-button
-                        aria-expanded="false"
-                        aria-controls="menu-container"
-                    >
-                        <svg width="40" height="40">
-                            <use href="./img/icons.svg#icon-menu-active" class="icon-cross"></use>
-                            <use href="./img/icons.svg#icon-close-menu" class="icon-menu"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="tablet__header">
-                    <a class="header__logo" href="./index.html"
-                        ><span class="logo__accent">Web</span>Studio
-                    </a>
-                    <ul class="nav-block__list">
-                        <li>
-                            <a class="nav-block__link nav-block__link--active" href="./index.html"
-                                >Студія</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                class="nav-block__link"
-                                href="./portfolio.html"
-                                target="_self"
-                                rel="noopener noreferrer nofollow"
-                                >Портфоліо</a
-                            >
-                        </li>
-                        <li><a class="nav-block__link" href="">Контакти</a></li>
-                    </ul>
-                    <ul class="contact">
-                        <li>
-                            <a class="contact__link contact__mail" href="mailto:info@devstudio.com">
-                                <svg class="contact__icon" height="12" width="16">
-                                    <use href="./img/icons.svg#icon-envelope"></use>
-                                </svg>
-                                <p>info@devstudio.com</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="contact__link contact__phone" href="tel:+380961111111">
-                                <svg class="contact__icon" height="16" width="12">
-                                    <use href="./img/icons.svg#icon-smartphone"></use>
-                                </svg>
-                                <p>+38 096 111 11 11</p>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="header__container">
+                    <div class="mobile__header">
+                        <a class="header__logo" href="./index.html"
+                            ><span class="logo__accent">Web</span>Studio
+                        </a>
+                        <button
+                            type="button"
+                            class="menu-button is-open"
+                            data-menu-button
+                            aria-expanded="false"
+                            aria-controls="menu-container"
+                        >
+                            <svg width="40" height="40">
+                                <use
+                                    href="./img/icons.svg#icon-menu-active"
+                                    class="icon-cross"
+                                ></use>
+                                <use href="./img/icons.svg#icon-close-menu" class="icon-menu"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="tablet__header">
+                        <a class="header__logo" href="./index.html"
+                            ><span class="logo__accent">Web</span>Studio
+                        </a>
+                        <ul class="nav-block__list">
+                            <li>
+                                <a
+                                    class="nav-block__link nav-block__link--active"
+                                    href="./index.html"
+                                    >Студія</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="nav-block__link"
+                                    href="./portfolio.html"
+                                    target="_self"
+                                    rel="noopener noreferrer nofollow"
+                                    >Портфоліо</a
+                                >
+                            </li>
+                            <li><a class="nav-block__link" href="">Контакти</a></li>
+                        </ul>
+                        <ul class="contact">
+                            <li>
+                                <a
+                                    class="contact__link contact__mail"
+                                    href="mailto:info@devstudio.com"
+                                >
+                                    <svg class="contact__icon" height="12" width="16">
+                                        <use href="./img/icons.svg#icon-envelope"></use>
+                                    </svg>
+                                    <p>info@devstudio.com</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="contact__link contact__phone" href="tel:+380961111111">
+                                    <svg class="contact__icon" height="16" width="12">
+                                        <use href="./img/icons.svg#icon-smartphone"></use>
+                                    </svg>
+                                    <p>+38 096 111 11 11</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </header>
@@ -192,18 +202,21 @@
                         <li class="person">
                             <picture class="person__img">
                                 <source
-                                    srcset="./img/team1-phone.jpg 1x, ./img/team1-phone@2x.jpg 2x)"
-                                    media="max-width: 767px"
+                                    srcset="./img/team1-phone.jpg 1x, ./img/team1-phone@2x.jpg 2x"
+                                    media="(max-width: 767px)"
                                 />
                                 <source
                                     srcset="./img/team1-tablet.jpg 1x, ./img/team1-tablet@2x.jpg 2x"
-                                    media="min-width: 768px"
+                                    media="(min-width: 768px)"
                                 />
                                 <source
-                                    srcset="./img/team1-desktop.jpg 1x, ./img/team1-desktop@2x.jpg 2x)"
-                                    media="min-width: 1200px"
+                                    srcset="
+                                        ./img/team1-desktop.jpg    1x,
+                                        ./img/team1-desktop@2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
                                 />
-                                <img src="./img/team1-desktop.jpg" alt="Ігор Дем'яненко" />
+                                <img src="./img/team1-phone.jpg" alt="Ігор Дем'яненко" />
                             </picture>
                             <div class="person__info">
                                 <h3 class="person__title">Ігор Дем'яненко</h3>
@@ -243,18 +256,21 @@
                         <li class="person">
                             <picture class="person__img">
                                 <source
-                                    srcset="./img/team2-phone.jpg 1x, ./img/team2-phone@2x.jpg 2x)"
-                                    media="max-width: 767px"
+                                    srcset="./img/team2-phone.jpg 1x, ./img/team2-phone@2x.jpg 2x"
+                                    media="(max-width: 767px)"
                                 />
                                 <source
-                                    srcset="./img/team2-tablet.jpg 1x, ./img/team2-tablet@2x.jpg 2x)"
-                                    media="min-width: 768px"
+                                    srcset="./img/team2-tablet.jpg 1x, ./img/team2-tablet@2x.jpg 2x"
+                                    media="(min-width: 768px)"
                                 />
                                 <source
-                                    srcset="./img/team2-desktop.jpg 1x, ./img/team2-desktop@2x.jpg 2x)"
-                                    media="min-width: 1200px"
+                                    srcset="
+                                        ./img/team2-desktop.jpg    1x,
+                                        ./img/team2-desktop@2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
                                 />
-                                <img src="./img/team2-desktop.jpg" alt="Ольга Рєпіна" />
+                                <img src="./img/team2-phone.jpg" alt="Ольга Рєпіна" />
                             </picture>
                             <div class="person__info">
                                 <h3 class="person__title">Ольга Рєпіна</h3>
@@ -294,18 +310,21 @@
                         <li class="person">
                             <picture class="person__img">
                                 <source
-                                    srcset="./img/team3-phone.jpg 1x, ./img/team3-phone@2x.jpg 2x)"
-                                    media="max-width: 767px"
+                                    srcset="./img/team3-phone.jpg 1x, ./img/team3-phone@2x.jpg 2x"
+                                    media="(max-width: 767px)"
                                 />
                                 <source
                                     srcset="./img/team3-tablet.jpg 1x, ./img/team3-tablet@2x.jpg 2x"
-                                    media="min-width: 768px"
+                                    media="(min-width: 768px)"
                                 />
                                 <source
-                                    srcset="./img/team3-desktop.jpg 1x, ./img/team3-desktop@2x.jpg 2x)"
-                                    media="min-width: 1200px"
+                                    srcset="
+                                        ./img/team3-desktop.jpg    1x,
+                                        ./img/team3-desktop@2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
                                 />
-                                <img src="./img/team3-desktop.jpg" alt="Микола Тарасов" />
+                                <img src="./img/team3-phone.jpg" alt="Микола Тарасов" />
                             </picture>
                             <div class="person__info">
                                 <h3 class="person__title">Микола Тарасов</h3>
@@ -345,18 +364,21 @@
                         <li class="person">
                             <picture class="person__img">
                                 <source
-                                    srcset="./img/team4-phone.jpg 1x, ./img/team4-phone@2x.jpg 2x)"
-                                    media="max-width: 767px"
+                                    srcset="./img/team4-phone.jpg 1x, ./img/team4-phone@2x.jpg 2x"
+                                    media="(max-width: 767px)"
                                 />
                                 <source
                                     srcset="./img/team4-tablet.jpg 1x, ./img/team4-tablet@2x.jpg 2x"
-                                    media="min-width: 768px"
+                                    media="(min-width: 768px)"
                                 />
                                 <source
-                                    srcset="./img/team4-desktop.jpg 1x, ./img/team4-desktop@2x.jpg 2x)"
-                                    media="min-width: 1200px"
+                                    srcset="
+                                        ./img/team4-desktop.jpg    1x,
+                                        ./img/team4-desktop@2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
                                 />
-                                <img src="./img/team4-desktop.jpg" alt="Михайло Єрмаков" />
+                                <img src="./img/team4-phone.jpg" alt="Михайло Єрмаков" />
                             </picture>
                             <div class="person__info">
                                 <h3 class="person__title">Михайло Єрмаков</h3>

@@ -4,18 +4,23 @@ border-bottom: #ececec 1px solid;
 position: relative;
 margin-left: auto;
 margin-right: auto;
-    @include forPhoneOnly{
-        width: 100vw;
+@include forTabletUp{
+height: 80px;
+}
+}
+
+.header__container{
+height: 60px;
+width: 100vw;
+@include forPhoneOnly {
         max-width: 480px;
     }
-    @include forTabletUp{
+    @include forTabletUp {
         width: 768px;
-        height: 80px;
+       height: 80px;
     }
-    @include forDesktop{
+    @include forDesktop {
         width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 
@@ -143,6 +148,9 @@ text-decoration: none;
 margin-bottom: 32px;
 display: block;
 transition: text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (max-width:479px) {
+            font-size: 20px;
+    }
 &:hover,
 &:focus{
 text-decoration: underline;
@@ -174,12 +182,18 @@ line-height: 1.22;
 letter-spacing: 0.02em;
 color: $accentColor;
 text-decoration: none;
+@media screen and (max-width:479px){
+    font-size: 10px;
+}
 }
 .line{
 font-weight: 400;
 font-size: 18px;
 line-height: 1.22;
 color: $paleColor;
+@media screen and (max-width:479px) {
+        font-size: 10px;
+    }
 }
 
 .tablet__header {
